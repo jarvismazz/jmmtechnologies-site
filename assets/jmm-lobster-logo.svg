@@ -1,0 +1,43 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shell" x1="118" y1="92" x2="388" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7BE7DC"/>
+      <stop offset="0.5" stop-color="#6CA7FF"/>
+      <stop offset="1" stop-color="#FF885B"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="140" y1="120" x2="378" y2="392" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DFFBFF" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#A6D0FF" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="118" fill="#08101C"/>
+  <rect x="20" y="20" width="472" height="472" rx="98" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  <g opacity="0.16">
+    <path d="M114 114H398" stroke="#D9EEFF" stroke-width="2"/>
+    <path d="M114 398H398" stroke="#D9EEFF" stroke-width="2"/>
+    <path d="M114 114V398" stroke="#D9EEFF" stroke-width="2"/>
+    <path d="M398 114V398" stroke="#D9EEFF" stroke-width="2"/>
+  </g>
+  <g>
+    <path d="M168 260C168 199.249 217.249 150 278 150H296C336.869 150 370 183.131 370 224V246C370 309.961 318.961 361 255 361H233C197.101 361 168 331.899 168 296V260Z" fill="url(#shell)"/>
+    <path d="M174 250C174 194.772 218.772 150 274 150H286C312.51 150 334 171.49 334 198V310C334 338.719 310.719 362 282 362H238C202.654 362 174 333.346 174 298V250Z" fill="#091423" fill-opacity="0.62"/>
+    <path d="M230 169L230 346" stroke="url(#glow)" stroke-width="18" stroke-linecap="round"/>
+    <path d="M278 187V330" stroke="url(#glow)" stroke-width="18" stroke-linecap="round"/>
+    <path d="M230 257H278" stroke="url(#glow)" stroke-width="18" stroke-linecap="round"/>
+    <path d="M317 207C336.882 196.705 356.579 187.306 376 179" stroke="url(#shell)" stroke-width="15" stroke-linecap="round"/>
+    <path d="M330 248C351.118 248 371.785 249.321 392 252" stroke="url(#shell)" stroke-width="15" stroke-linecap="round"/>
+    <path d="M317 289C336.882 299.295 356.579 308.694 376 317" stroke="url(#shell)" stroke-width="15" stroke-linecap="round"/>
+    <path d="M208 211C188.118 200.705 168.421 191.306 149 183" stroke="url(#shell)" stroke-width="15" stroke-linecap="round"/>
+    <path d="M196 252C174.882 252 154.215 253.321 134 256" stroke="url(#shell)" stroke-width="15" stroke-linecap="round"/>
+    <path d="M208 293C188.118 303.295 168.421 312.694 149 321" stroke="url(#shell)" stroke-width="15" stroke-linecap="round"/>
+    <path d="M346 171C360 146 377 129 397 118" stroke="#FF885B" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="404" cy="109" r="10" fill="#FF885B"/>
+    <path d="M184 171C170 146 153 129 133 118" stroke="#7BE7DC" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="126" cy="109" r="10" fill="#7BE7DC"/>
+    <path d="M398 120C413 122 425 131 435 146C419 152 404 151 390 145" fill="#FF885B"/>
+    <path d="M435 146C425 161 412 171 394 174" stroke="#FFB095" stroke-width="8" stroke-linecap="round"/>
+    <path d="M134 120C119 122 107 131 97 146C113 152 128 151 142 145" fill="#7BE7DC"/>
+    <path d="M97 146C107 161 120 171 138 174" stroke="#B2FFF4" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <text x="256" y="438" text-anchor="middle" fill="#ECF3FF" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" letter-spacing="0.16em">JMM</text>
+</svg>
