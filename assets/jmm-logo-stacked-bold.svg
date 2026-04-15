@@ -1,0 +1,7 @@
+<svg width="520" height="420" viewBox="0 0 520 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="520" height="420" rx="44" fill="#08111F"/>
+  <rect x="38" y="38" width="444" height="344" rx="32" fill="#0F1B2D" stroke="#243B5A" stroke-width="2"/>
+  <text x="260" y="210" text-anchor="middle" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="160" font-weight="800" letter-spacing="8">JMM</text>
+  <text x="260" y="275" text-anchor="middle" fill="#8FB7FF" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="9">TECHNOLOGIES</text>
+  <rect x="145" y="304" width="230" height="10" rx="5" fill="#22D3EE"/>
+</svg>

@@ -73,8 +73,8 @@ body::before {
 }
 
 .brand-logo {
-  width: 88px;
-  height: 88px;
+  width: 132px;
+  height: 132px;
   flex: 0 0 auto;
 }
 
@@ -290,5 +290,10 @@ body::before {
 
   .site-header {
     padding: 18px;
+  }
+
+  .brand-logo {
+    width: 104px;
+    height: 104px;
   }
 }

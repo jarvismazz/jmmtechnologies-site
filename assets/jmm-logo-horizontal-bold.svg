@@ -1,0 +1,8 @@
+<svg width="760" height="220" viewBox="0 0 760 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="760" height="220" rx="34" fill="#091220"/>
+  <rect x="24" y="24" width="712" height="172" rx="26" fill="#101B2E" stroke="#253D5F" stroke-width="2"/>
+  <text x="64" y="136" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="112" font-weight="800" letter-spacing="6">JMM</text>
+  <text x="345" y="118" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="700" letter-spacing="7">TECHNOLOGIES</text>
+  <text x="346" y="154" fill="#8FA9C9" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="600" letter-spacing="4">MODERN SOFTWARE WITH PURPOSE</text>
+  <rect x="345" y="168" width="270" height="8" rx="4" fill="#22D3EE"/>
+</svg>
