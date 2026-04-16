@@ -105,16 +105,71 @@ a {
 }
 
 .brand-symbol {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.4rem;
-  height: 2.4rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--surface);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
-  backdrop-filter: blur(16px);
+  width: 2.85rem;
+  height: 2.85rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--line));
+  border-radius: 0.95rem;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.72), transparent 34%),
+    linear-gradient(145deg, color-mix(in srgb, var(--accent) 34%, white), color-mix(in srgb, var(--foreground) 16%, var(--accent)) 58%, color-mix(in srgb, var(--foreground) 10%, black));
+  box-shadow:
+    0 18px 36px color-mix(in srgb, var(--accent) 22%, transparent),
+    inset 0 1px 0 rgba(255, 255, 255, 0.32);
+  backdrop-filter: blur(18px);
+  overflow: hidden;
+}
+
+.brand-symbol-grid,
+.brand-symbol-core,
+.brand-symbol-text {
+  position: absolute;
+}
+
+.brand-symbol-grid {
+  inset: 0.38rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0.7rem;
+}
+
+.brand-symbol-grid::before,
+.brand-symbol-grid::after {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.brand-symbol-grid::before {
+  inset: 22% auto 22% 50%;
+  width: 1px;
+  transform: translateX(-50%);
+}
+
+.brand-symbol-grid::after {
+  inset: 50% 22% auto 22%;
+  height: 1px;
+  transform: translateY(-50%);
+}
+
+.brand-symbol-core {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 0.38rem;
+  background: rgba(8, 12, 28, 0.2);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 10px 22px rgba(7, 11, 28, 0.25);
+  transform: rotate(45deg);
+}
+
+.brand-symbol-text {
+  font-size: 0.56rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: white;
 }
 
 .nav-link,
@@ -491,6 +546,15 @@ h3 {
   .nav-link,
   .nav-cta {
     font-size: 0.88rem;
+  }
+
+  .brand-symbol {
+    width: 2.55rem;
+    height: 2.55rem;
+  }
+
+  .brand-symbol-text {
+    font-size: 0.52rem;
   }
 
   .visual-stage {
