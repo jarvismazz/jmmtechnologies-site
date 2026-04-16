@@ -87,6 +87,14 @@ a {
   padding: 0.75rem 0 2rem;
 }
 
+.nav-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 .brand-mark {
   display: inline-flex;
   align-items: center;
@@ -109,6 +117,7 @@ a {
   backdrop-filter: blur(16px);
 }
 
+.nav-link,
 .nav-cta,
 .button {
   display: inline-flex;
@@ -122,6 +131,7 @@ a {
   transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
+.nav-link,
 .nav-cta,
 .button.secondary {
   border: 1px solid var(--line);
@@ -201,6 +211,24 @@ h3 {
   flex-wrap: wrap;
   gap: 0.85rem;
   margin-top: 2rem;
+}
+
+.contact-strip,
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.contact-strip {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.contact-strip a {
+  color: inherit;
 }
 
 .keynote-visual {
@@ -411,6 +439,7 @@ h3 {
 }
 
 .button:hover,
+.nav-link:hover,
 .nav-cta:hover {
   transform: translateY(-1px);
 }
@@ -453,7 +482,13 @@ h3 {
     padding-bottom: 1.5rem;
   }
 
+  .nav-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
   .brand-mark span:last-child,
+  .nav-link,
   .nav-cta {
     font-size: 0.88rem;
   }
