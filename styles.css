@@ -567,14 +567,30 @@ main > section { width: var(--shell); margin: 0 auto; }
   transition: border-color 240ms var(--ease), transform 240ms var(--ease), background 240ms var(--ease);
 }
 .work-card:hover { border-color: var(--line-strong); background: var(--surface-2); transform: translateY(-2px); }
+.work-card-feature {
+  grid-column: span 2;
+  background: linear-gradient(135deg, rgba(124,233,255,0.07), rgba(195,180,255,0.05) 50%, rgba(10,13,26,0.2));
+  border-color: rgba(124,233,255,0.22);
+}
+.work-card-feature h4 { font-size: clamp(1.8rem, 2.6vw, 2.4rem); max-width: 22ch; }
+.work-card-feature:hover { border-color: rgba(124,233,255,0.45); }
+@media (max-width: 900px) {
+  .work-card-feature { grid-column: auto; }
+}
 .tag {
-  display: inline-flex; align-items: center;
+  display: inline-flex; align-items: center; gap: 0.5rem;
   font-family: var(--font-mono);
   font-size: 0.74rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 1.25rem;
+}
+.tag .dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 3px rgba(124, 233, 255, 0.18);
+  animation: pulse 2.4s ease-in-out infinite;
 }
 .work-card h4 {
   font-family: var(--font-display);
