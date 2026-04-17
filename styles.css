@@ -155,6 +155,19 @@ img, svg { display: block; max-width: 100%; }
 .nav-links a:focus-visible { color: var(--fg); outline: none; }
 .nav-links a:focus-visible::after { transform: scaleX(1); }
 
+.nav-actions {
+  display: inline-flex; align-items: center; gap: 1rem;
+  justify-self: end;
+}
+.nav-tel {
+  font-family: var(--font-mono);
+  font-size: 0.86rem;
+  color: var(--fg-dim);
+  letter-spacing: 0.02em;
+  transition: color 180ms var(--ease);
+}
+.nav-tel:hover { color: var(--fg); }
+.nav-tel:focus-visible { color: var(--fg); outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
 .nav-cta {
   display: inline-flex; align-items: center; gap: 0.5rem;
   padding: 0.6rem 1rem;
@@ -173,6 +186,9 @@ img, svg { display: block; max-width: 100%; }
 @media (max-width: 960px) {
   .nav-links { display: none; }
   .nav { grid-template-columns: 1fr auto; gap: 1rem; }
+}
+@media (max-width: 760px) {
+  .nav-tel { display: none; }
 }
 @media (max-width: 480px) {
   .brand-name { display: none; }
