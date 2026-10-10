@@ -1,431 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#07080c" />
-    <title>JMM Technologies — Agentic products for entertainment &amp; business</title>
-    <meta
-      name="description"
-      content="JMM Technologies builds agentic software for both sides of the screen — entertainment people enjoy, and the business systems that keep the lights on. First up: an iOS app."
-    />
-    <meta name="author" content="JMM Technologies" />
-
-    <meta property="og:title" content="JMM Technologies" />
-    <meta
-      property="og:description"
-      content="Agentic products for entertainment &amp; business. First up: an iOS app."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://jmmtechnologies.app" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="JMM Technologies" />
-    <meta
-      name="twitter:description"
-      content="Agentic products for entertainment &amp; business. First up: an iOS app."
-    />
-
-    <link rel="icon" type="image/svg+xml" href="assets/jmm-logo-icon-bold.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="grain" aria-hidden="true"></div>
-    <div class="ambient" aria-hidden="true">
-      <div class="ambient-orb orb-a"></div>
-      <div class="ambient-orb orb-b"></div>
-      <div class="ambient-orb orb-c"></div>
-    </div>
-
-    <header class="nav" aria-label="Primary">
-      <a class="brand" href="#top" aria-label="JMM Technologies home">
-        <svg class="brand-mark" viewBox="0 0 240 240" aria-hidden="true">
-          <rect width="240" height="240" rx="52" fill="url(#brandGrad)" />
-          <path
-            d="M54 62V178H82V106L112 146H116L146 106V178H174V62H145L114 105L83 62H54Z"
-            fill="#F6F7FB"
-          />
-          <circle cx="186" cy="56" r="16" fill="#7CE9FF" />
-          <defs>
-            <linearGradient id="brandGrad" x1="0" y1="0" x2="240" y2="240" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#1a2240" />
-              <stop offset="1" stop-color="#0a0d1a" />
-            </linearGradient>
-          </defs>
-        </svg>
-        <span class="brand-name">JMM&nbsp;Technologies</span>
-      </a>
-
-      <nav class="nav-links" aria-label="Section navigation">
-        <a href="#approach">Approach</a>
-        <a href="#capabilities">Capabilities</a>
-        <a href="#work">Work</a>
-      </nav>
-
-      <div class="nav-actions">
-        <a class="nav-tel" href="tel:+19088087754">(908)&nbsp;808-7754</a>
-        <a class="nav-cta" href="mailto:john@jmmtechnologies.app">
-          <span>Start a conversation</span>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-      </div>
-    </header>
-
-    <main id="top">
-      <!-- HERO -->
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-meta">
-          <span class="pill">
-            <span class="pulse-dot" aria-hidden="true"></span>
-            Building now &middot; Flagship iOS app
-          </span>
-          <span class="meta-divider" aria-hidden="true"></span>
-          <span class="meta-text">Entertainment&nbsp;&middot;&nbsp;Business&nbsp;&middot;&nbsp;Agents</span>
-        </div>
-
-        <h1 id="hero-title" class="display">
-          <span class="line" data-reveal>Agentic products.</span>
-          <span class="line" data-reveal><em>At work &amp; at play.</em></span>
-        </h1>
-
-        <p class="hero-lede" data-reveal>
-          JMM Technologies builds agentic software for both sides of the screen &mdash;
-          entertainment people enjoy, and the business systems that keep the lights on.
-          First up: an iOS app.
-        </p>
-
-        <div class="hero-actions" data-reveal>
-          <a class="btn btn-primary" href="mailto:john@jmmtechnologies.app">
-            Build what&rsquo;s next
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <a class="btn btn-ghost" href="#approach">See how we work</a>
-        </div>
-
-        <!-- Animated orbital visualization -->
-        <div class="hero-visual" aria-hidden="true">
-          <svg viewBox="-400 -400 800 800" class="orbit" preserveAspectRatio="xMidYMid meet">
-            <defs>
-              <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stop-color="#8aa7ff" stop-opacity="0.85"/>
-                <stop offset="55%" stop-color="#3a4a9e" stop-opacity="0.32"/>
-                <stop offset="100%" stop-color="#0a0d1a" stop-opacity="0"/>
-              </radialGradient>
-              <linearGradient id="ringGrad" x1="-1" y1="0" x2="1" y2="0">
-                <stop offset="0%" stop-color="rgba(255,255,255,0)"/>
-                <stop offset="50%" stop-color="rgba(180,200,255,0.55)"/>
-                <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
-              </linearGradient>
-              <radialGradient id="nodeGlowA" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stop-color="#7CE9FF" stop-opacity="0.9"/>
-                <stop offset="100%" stop-color="#7CE9FF" stop-opacity="0"/>
-              </radialGradient>
-              <radialGradient id="nodeGlowB" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stop-color="#c3b4ff" stop-opacity="0.9"/>
-                <stop offset="100%" stop-color="#c3b4ff" stop-opacity="0"/>
-              </radialGradient>
-              <radialGradient id="nodeGlowC" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stop-color="#ffd3a6" stop-opacity="0.9"/>
-                <stop offset="100%" stop-color="#ffd3a6" stop-opacity="0"/>
-              </radialGradient>
-            </defs>
-
-            <!-- Core glow -->
-            <circle cx="0" cy="0" r="260" fill="url(#coreGlow)"/>
-
-            <!-- Orbit rings (SVG transforms, centered at 0,0) -->
-            <g class="orbit-ring ring-1">
-              <ellipse rx="340" ry="200" stroke="url(#ringGrad)" stroke-width="1" fill="none"/>
-            </g>
-            <g class="orbit-ring ring-2">
-              <ellipse rx="280" ry="160" stroke="rgba(180,200,255,0.22)" stroke-width="1" fill="none"/>
-            </g>
-            <g class="orbit-ring ring-3">
-              <ellipse rx="220" ry="120" stroke="rgba(180,200,255,0.18)" stroke-width="1" fill="none"/>
-            </g>
-            <circle cx="0" cy="0" r="130" stroke="rgba(180,200,255,0.26)" stroke-width="1" fill="none"/>
-
-            <!-- Orbiting nodes: each group rotates around origin (0,0), child is translated to radius -->
-            <g class="node-orbit orbit-a">
-              <g transform="translate(340, 0)">
-                <circle r="18" fill="url(#nodeGlowA)"/>
-                <circle r="6" fill="#7CE9FF"/>
-              </g>
-            </g>
-            <g class="node-orbit orbit-b">
-              <g transform="translate(280, 0)">
-                <circle r="15" fill="url(#nodeGlowB)"/>
-                <circle r="5" fill="#c3b4ff"/>
-              </g>
-            </g>
-            <g class="node-orbit orbit-c">
-              <g transform="translate(220, 0)">
-                <circle r="13" fill="url(#nodeGlowC)"/>
-                <circle r="4.5" fill="#ffd3a6"/>
-              </g>
-            </g>
-
-            <!-- Core disc -->
-            <g class="core">
-              <circle cx="0" cy="0" r="66" fill="#0a0d1a" stroke="rgba(255,255,255,0.22)" stroke-width="1"/>
-              <circle cx="0" cy="0" r="66" fill="none" stroke="url(#ringGrad)" stroke-width="1.5"/>
-              <circle cx="0" cy="0" r="80" fill="none" stroke="rgba(124,233,255,0.12)" stroke-width="1"/>
-              <text x="0" y="10" text-anchor="middle" font-family="Instrument Serif, serif" font-size="30" font-style="italic" fill="#f6f7fb">jmm</text>
-            </g>
-          </svg>
-        </div>
-
-        <!-- Scroll cue -->
-        <div class="scroll-cue" aria-hidden="true">
-          <span>Scroll</span>
-          <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-      </section>
-
-      <!-- MARQUEE -->
-      <section class="marquee" aria-label="What we build">
-        <div class="marquee-track">
-          <span>iOS apps</span><span aria-hidden="true">◆</span>
-          <span>Agentic entertainment</span><span aria-hidden="true">◆</span>
-          <span>Business agents</span><span aria-hidden="true">◆</span>
-          <span>On-device AI</span><span aria-hidden="true">◆</span>
-          <span>Cloud &amp; data</span><span aria-hidden="true">◆</span>
-          <span>Agent-native UX</span><span aria-hidden="true">◆</span>
-          <span>Operational workflows</span><span aria-hidden="true">◆</span>
-          <!-- duplicated for seamless scroll -->
-          <span>iOS apps</span><span aria-hidden="true">◆</span>
-          <span>Agentic entertainment</span><span aria-hidden="true">◆</span>
-          <span>Business agents</span><span aria-hidden="true">◆</span>
-          <span>On-device AI</span><span aria-hidden="true">◆</span>
-          <span>Cloud &amp; data</span><span aria-hidden="true">◆</span>
-          <span>Agent-native UX</span><span aria-hidden="true">◆</span>
-          <span>Operational workflows</span><span aria-hidden="true">◆</span>
-        </div>
-      </section>
-
-      <!-- STATEMENT -->
-      <section class="statement" aria-label="Thesis">
-        <p data-reveal>
-          Agents should be <em>useful</em> &mdash; on the couch and at the desk.
-          We build the product layer that makes them feel inevitable on both sides:
-          entertainment people actually reach for, and business workflows that keep running when no one is watching.
-        </p>
-      </section>
-
-      <!-- APPROACH / PILLARS -->
-      <section id="approach" class="pillars" aria-labelledby="approach-title">
-        <header class="section-head" data-reveal>
-          <span class="eyebrow">01 — Approach</span>
-          <h2 id="approach-title" class="display-sm">
-            Elegant systems, <em>grounded in business reality.</em>
-          </h2>
-        </header>
-
-        <div class="pillar-grid">
-          <article class="pillar" data-reveal>
-            <div class="pillar-index">01</div>
-            <div class="pillar-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><path d="M24 6 8 14v12c0 10 7 17 16 22 9-5 16-12 16-22V14L24 6Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M18 24l4 4 8-9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <h3>Agents that earn their keep</h3>
-            <p>We build agents with taste &mdash; ones that show up, do the work, and step back. Entertainment agents that feel alive. Business agents that feel reliable.</p>
-            <ul class="pillar-list">
-              <li>Agent design &amp; orchestration</li>
-              <li>On-device &amp; cloud LLMs</li>
-              <li>Evals, guardrails &amp; retrieval</li>
-            </ul>
-          </article>
-
-          <article class="pillar" data-reveal>
-            <div class="pillar-index">02</div>
-            <div class="pillar-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><rect x="14" y="4" width="20" height="40" rx="4" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="24" cy="39" r="1.5" fill="currentColor"/><path d="M20 10h8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-            </div>
-            <h3>iOS first, cloud second</h3>
-            <p>Native Swift apps backed by serious cloud and data. Built for reliability beyond the first demo &mdash; shippable, observable, and quiet in production.</p>
-            <ul class="pillar-list">
-              <li>Swift / SwiftUI / SpriteKit</li>
-              <li>Agent runtimes &amp; tooling</li>
-              <li>Cloud, data &amp; observability</li>
-            </ul>
-          </article>
-
-          <article class="pillar" data-reveal>
-            <div class="pillar-index">03</div>
-            <div class="pillar-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><circle cx="17" cy="18" r="6" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="33" cy="20" r="5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6 40c1-6 6-10 11-10s10 4 11 10M24 40c1-5 5-8 9-8s8 3 9 8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-            </div>
-            <h3>Human by design</h3>
-            <p>Agents amplify people, not replace them. We design for the judgment, joy, and workflows that make a product &mdash; or a business &mdash; actually run.</p>
-            <ul class="pillar-list">
-              <li>Product strategy &amp; UX</li>
-              <li>Trust, safety &amp; transparency</li>
-              <li>Team &amp; operating design</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <!-- CAPABILITIES MATRIX -->
-      <section id="capabilities" class="capabilities" aria-labelledby="cap-title">
-        <header class="section-head" data-reveal>
-          <span class="eyebrow">02 — Capabilities</span>
-          <h2 id="cap-title" class="display-sm">
-            From first concept <em>to operating advantage.</em>
-          </h2>
-        </header>
-
-        <div class="cap-grid">
-          <div class="cap-card" data-reveal>
-            <span class="cap-num">01</span>
-            <h4>iOS product</h4>
-            <p>Native Swift / SwiftUI / SpriteKit apps designed to feel alive, not inflated. Agent-native from the first screen.</p>
-          </div>
-          <div class="cap-card" data-reveal>
-            <span class="cap-num">02</span>
-            <h4>Agent design</h4>
-            <p>What an agent should do, when to stay quiet, and how people stay in control. Taste, not just tooling.</p>
-          </div>
-          <div class="cap-card" data-reveal>
-            <span class="cap-num">03</span>
-            <h4>Engineering</h4>
-            <p>Swift, TypeScript, cloud, and data &mdash; shipped with discipline. Evals, observability, and quiet releases.</p>
-          </div>
-          <div class="cap-card" data-reveal>
-            <span class="cap-num">04</span>
-            <h4>Entertainment</h4>
-            <p>Agent-native apps, games, and interactive experiences. Characters with continuity, playthroughs worth replaying.</p>
-          </div>
-          <div class="cap-card" data-reveal>
-            <span class="cap-num">05</span>
-            <h4>Business agents</h4>
-            <p>Workflow agents that handle the work a team already does &mdash; with the guardrails and audit trail an operator expects.</p>
-          </div>
-          <div class="cap-card" data-reveal>
-            <span class="cap-num">06</span>
-            <h4>Strategy</h4>
-            <p>Product bets, AI adoption maps, build-vs-buy, and the boring-but-critical groundwork behind a real launch.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- WORK / CONTEXT -->
-      <section id="work" class="work" aria-labelledby="work-title">
-        <header class="section-head" data-reveal>
-          <span class="eyebrow">03 — Where we&rsquo;re pointed</span>
-          <h2 id="work-title" class="display-sm">
-            Starting with an iOS app. <em>Going wherever agents belong.</em>
-          </h2>
-        </header>
-
-        <div class="work-grid">
-          <article class="work-card work-card-feature" data-reveal>
-            <span class="tag"><span class="dot" aria-hidden="true"></span> In build &middot; Flagship</span>
-            <h4>An iOS entertainment app built around a real agent.</h4>
-            <p>Our first product. An agent that remembers you, plays with you, and gets better the more you use it &mdash; native on iPhone, designed for the moments you actually pick up the phone.</p>
-          </article>
-          <article class="work-card" data-reveal>
-            <span class="tag">Agentic entertainment</span>
-            <h4>Characters with continuity. Playthroughs with memory.</h4>
-            <p>Entertainment that doesn&rsquo;t reset every session. Agents that carry context, show personality, and know when the player wants them to disappear.</p>
-          </article>
-          <article class="work-card" data-reveal>
-            <span class="tag">Business agents</span>
-            <h4>Quiet agents inside the workflows a team already runs.</h4>
-            <p>Ops, data, and customer-facing work delegated to agents that fit the constraints of a real business: guardrails, audit trails, and a human still very much in the loop.</p>
-          </article>
-          <article class="work-card" data-reveal>
-            <span class="tag">Partnerships</span>
-            <h4>Studios, operators, and founders building alongside us.</h4>
-            <p>We&rsquo;re a small team shipping our own products and selectively partnering where an agent-first approach would unlock something new. If that&rsquo;s you, say hello.</p>
-          </article>
-        </div>
-      </section>
-
-      <!-- CTA -->
-      <section class="cta" aria-labelledby="cta-title">
-        <div class="cta-inner" data-reveal>
-          <span class="eyebrow">04 &mdash; Let&rsquo;s talk</span>
-          <h2 id="cta-title" class="display">
-            Building something <em>agent-shaped?</em>
-          </h2>
-          <p>
-            Whether it&rsquo;s an entertainment idea, a business workflow begging for
-            automation, or early access to our iOS app &mdash; we&rsquo;d like to hear it.
-          </p>
-          <div class="cta-actions">
-            <a class="btn btn-primary btn-large" href="mailto:john@jmmtechnologies.app">
-              john@jmmtechnologies.app
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-            <a class="btn btn-ghost btn-large" href="tel:+19088087754">
-              Call (908)&nbsp;808-7754
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="foot">
-      <div class="foot-inner">
-        <div class="foot-brand">
-          <svg class="brand-mark" viewBox="0 0 240 240" aria-hidden="true">
-            <rect width="240" height="240" rx="52" fill="#11152a"/>
-            <path d="M54 62V178H82V106L112 146H116L146 106V178H174V62H145L114 105L83 62H54Z" fill="#f6f7fb"/>
-            <circle cx="186" cy="56" r="16" fill="#7CE9FF"/>
-          </svg>
-          <div>
-            <strong>JMM Technologies</strong>
-            <span>Agentic products for entertainment &amp; business.</span>
-          </div>
-        </div>
-        <div class="foot-meta">
-          <a href="mailto:john@jmmtechnologies.app">john@jmmtechnologies.app</a>
-          <a href="tel:+19088087754">(908)&nbsp;808-7754</a>
-          <span>© <span id="year">2026</span> JMM Technologies, LLC</span>
-        </div>
-      </div>
-    </footer>
-
-    <script>
-      // Year
-      document.getElementById('year').textContent = new Date().getFullYear();
-
-      // Scroll reveal — progressive enhancement.
-      // Only arm the fade-in state when IO is available and motion is allowed.
-      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      if ('IntersectionObserver' in window && !prefersReducedMotion) {
-        document.documentElement.classList.add('js-reveal-ready');
-        const io = new IntersectionObserver((entries) => {
-          for (const e of entries) {
-            if (e.isIntersecting) {
-              e.target.classList.add('in');
-              io.unobserve(e.target);
-            }
-          }
-        }, { threshold: 0.08, rootMargin: '0px 0px -4% 0px' });
-        document.querySelectorAll('[data-reveal]').forEach((el) => {
-          io.observe(el);
-          // Safety net: reveal after 1.2s regardless, so nothing ever stays hidden.
-          setTimeout(() => el.classList.add('in'), 1200);
-        });
-      }
-
-      // Subtle parallax on hero visual
-      const visual = document.querySelector('.hero-visual');
-      if (visual && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        window.addEventListener('mousemove', (ev) => {
-          const x = (ev.clientX / window.innerWidth - 0.5) * 14;
-          const y = (ev.clientY / window.innerHeight - 0.5) * 10;
-          visual.style.setProperty('--px', x.toFixed(2) + 'px');
-          visual.style.setProperty('--py', y.toFixed(2) + 'px');
-        }, { passive: true });
-      }
-    </script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5f3ed">
+<title>JMM Technologies — iPhone Games &amp; Mac Software</title>
+<meta name="description" content="Discover Stack Em!, an offline iPhone block puzzle, and Render Scape, real-time GPU wallpapers for Mac. Product guides, FAQs, privacy and direct support.">
+<link rel="canonical" href="https://jmmtechnologies.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="JMM Technologies — iPhone Games &amp; Mac Software">
+<meta property="og:description" content="Discover Stack Em!, an offline iPhone block puzzle, and Render Scape, real-time GPU wallpapers for Mac. Product guides, FAQs, privacy and direct support.">
+<meta property="og:url" content="https://jmmtechnologies.app/">
+<meta property="og:site_name" content="JMM Technologies">
+<meta property="og:image" content="https://jmmtechnologies.app/assets/social-card.png">
+<meta property="og:image:alt" content="JMM Technologies — Software for iPhone and Mac">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="/assets/jmm-logo-icon-bold.svg">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://jmmtechnologies.app/#organization", "name": "JMM Technologies LLC", "url": "https://jmmtechnologies.app/", "email": "john@jmmtechnologies.app", "logo": "https://jmmtechnologies.app/assets/jmm-logo-icon-bold.svg"}, {"@type": "WebPage", "@id": "https://jmmtechnologies.app/#webpage", "url": "https://jmmtechnologies.app/", "name": "JMM Technologies \u2014 iPhone Games & Mac Software", "description": "Discover Stack Em!, an offline iPhone block puzzle, and Render Scape, real-time GPU wallpapers for Mac. Product guides, FAQs, privacy and direct support.", "publisher": {"@id": "https://jmmtechnologies.app/#organization"}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<a class="brand" href="/" aria-label="JMM Technologies home">
+<img src="/assets/jmm-logo-icon-bold.svg" width="38" height="38" alt="">
+<span>JMM<span class="brand-light"> Technologies</span>
+</span>
+</a>
+<nav aria-label="Main navigation">
+<a href="/products/">Software</a>
+<a href="/support/">Support</a>
+<a href="/faq/">FAQ</a>
+<a href="/contact/">Contact</a>
+</nav>
+</header>
+<main id="main" class="wide">
+<div class="intro">
+<span class="eyebrow">Independent software · JMM Technologies</span>
+<h1>Made for your<br>
+<em>everyday escape.</em>
+</h1>
+<p class="lede">Thoughtful software for the moments between. Discover our iPhone puzzle game and a new way to make your Mac feel like yours.</p>
+</div>
+<div class="actions">
+<a href="/products/" class="button">Explore our software</a>
+<a href="/support/" class="button secondary">Find support</a>
+</div>
+<section class="section">
+<h2>Small details. A different feeling.</h2>
+<div class="product-grid">
+<article class="product-card">
+<div class="product-art stack-mini">
+<div class="phone-stage">
+<img src="/assets/products/stack-em-gameplay.webp" width="660" height="1434" alt="Stack Em! development preview showing colorful puzzle blocks on the Nebula board" fetchpriority="high">
+</div>
+</div>
+<div class="product-copy">
+<span class="eyebrow">iPhone · Available now</span>
+<h2>Stack Em!</h2>
+<p>A little strategy. A satisfying clear. An offline block puzzle built for one more try.</p>
+<div class="actions">
+<a href="https://apps.apple.com/app/id6774973758" class="button">Download on the App Store</a>
+<a href="/stack-em/" class="button secondary">Explore Stack Em!</a>
+</div>
+</div>
+</article>
+<article class="product-card">
+<div class="product-art">
+<video class="motion-preview" data-motion-preview controls muted loop playsinline preload="metadata" poster="/assets/products/render-scape-showcase-poster.jpg" aria-label="Render Scape screen demo: desktop widget and live sliders change Matrix Rain density, snowfall amount and reef fish population. No audio.">
+<source src="/assets/products/render-scape-showcase.mp4" type="video/mp4">Your browser cannot play this video. <a href="/assets/products/render-scape-showcase.mp4">Download the live-controls screen demo</a>.</video>
+</div>
+<div class="product-copy">
+<span class="eyebrow">Mac · Coming soon</span>
+<h2>Render Scape</h2>
+<p>Your desktop, alive. Snow, swimming fish and fire rendered in real time with Apple’s Metal technology—with controls to make the atmosphere yours.</p>
+<div class="actions">
+<a href="/render-scape/" class="button">Explore Render Scape</a>
+<a href="/render-scape/support/" class="button secondary">Get support</a>
+</div>
+</div>
+</article>
+</div>
+</section>
+<section class="section">
+<h2>Software with a personal touch.</h2>
+<div class="grid">
+<article class="card">
+<h3>Built around the experience</h3>
+<p>Satisfying play on iPhone. A little atmosphere on Mac. Each product has a clear purpose and its own character.</p>
+</article>
+<article class="card">
+<h3>Straightforward help</h3>
+<p>Product-specific guides, clear compatibility information, and a direct line to the people behind the software.</p>
+</article>
+<article class="card">
+<h3>Privacy, explained</h3>
+<p>Read what each app keeps on your device and what happens when you contact us. No vague promises, just the details.</p>
+</article>
+</div>
+</section>
+</main>
+<footer>
+<div class="footer-top">
+<a class="brand" href="/">JMM Technologies</a>
+<p>Software for a little more play.<br>A little more atmosphere.</p>
+<a href="mailto:john@jmmtechnologies.app">john@jmmtechnologies.app</a>
+</div>
+<div class="footer-bottom">
+<span>© 2026 JMM Technologies LLC</span>
+<nav aria-label="Footer">
+<a href="/products/">Software</a>
+<a href="/support/">Support</a>
+<a href="/contact/">Contact</a>
+<a href="/privacy/">Privacy</a>
+<a href="/terms/">Licenses</a>
+</nav>
+</div>
+</footer>
+<script src="/motion-preview.js" defer>
+</script>
+</body>
 </html>
